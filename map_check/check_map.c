@@ -6,7 +6,7 @@
 /*   By: rkurnava <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 10:53:44 by rkurnava          #+#    #+#             */
-/*   Updated: 2023/03/14 17:20:14 by rkurnava         ###   ########.fr       */
+/*   Updated: 2023/03/19 16:24:47 by rkurnava         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ int	ft_check_char(char **map)
 int	ft_check_map(char **map)
 {
 	if (map[0] == NULL)
-		return (1 && ft_printf("Error\n	%s\n", "Empy map!"));
+		return (1 && ft_printf("Error\n	%s\n", "Empty map!"));
 	if (ft_check_shape(map) == 2)
 	{
 		ft_printf("Error\n	%s\n", "Missing walls!");

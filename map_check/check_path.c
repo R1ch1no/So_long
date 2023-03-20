@@ -6,7 +6,7 @@
 /*   By: rkurnava <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 10:48:21 by rkurnava          #+#    #+#             */
-/*   Updated: 2023/02/19 10:33:30 by rkurnava         ###   ########.fr       */
+/*   Updated: 2023/03/19 17:07:32 by rkurnava         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,11 +67,11 @@ int	ft_check_end(char **map_cpy, int coins, int collect)
 		x = 0;
 		while (map_cpy[y][x])
 		{
-			if ((map_cpy[y][x] == 'E' && map_cpy[y][x + 1] == 'P' &&
-					coins == collect) ||
-				(map_cpy[y][x] == 'E' && map_cpy[y][x - 1] == 'P')
+			if (coins == collect && ((map_cpy[y][x] == 'E' && map_cpy[y][x
+					+ 1] == 'P' && coins == collect) ||
+					((map_cpy[y][x] == 'E' && map_cpy[y][x - 1] == 'P')
 					|| (map_cpy[y][x] == 'E' && map_cpy[y - 1][x] == 'P')
-					|| (map_cpy[y][x] == 'E' && map_cpy[y + 1][x] == 'P'))
+					|| (map_cpy[y][x] == 'E' && map_cpy[y + 1][x] == 'P'))))
 			{
 				clean_map(map_cpy);
 				return (0);
