@@ -40,9 +40,6 @@ $(NAME) : $(OBJ)
 	@$(CC) $(OBJ) $(CFLAGS) libmlx.a libftprintf.a -lXext -lX11 -o $(NAME)
 	@echo "$(NAME) created"
 
-%.o : %.c
-	@$(CC) $(CFLAGS) -c -o $@ $<
-
 clean :
 	@cd ft_printf && make fclean
 	@rm -f $(OBJ)
