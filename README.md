@@ -2,7 +2,7 @@
 
 So_long is a project of 42.
 Goal of this project is a create a small 2d game with the help of Mlx library.
-You most probably will need to download MLX library and configure Makefile and headerfile based on mlx usage (whether the user install it on the device or wants to use archive file only).
+You most probably will need to download MLX library and configure Makefile and headerfile based on mlx usage (whether the user installs it on the device or wants to use archive file only).
 Player can move the characted with WASD keys and arrows.
 Player can close the game with ESC key or X button on the windows itself.
 In the terminal as well as in the game window player can see the amount of moves made.
